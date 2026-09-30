@@ -1,0 +1,76 @@
+Week 2 Lab will learn
+Vite project structure
+React functional components
+JSX
+useState()
+Rendering arrays with .map()
+key props
+Event handling
+Controlled form inputs
+Conditional rendering
+Filtering data
+Component communication with props
+
+
+npm create vite@latest student-list -- --template react
+cd student-list
+npm install
+npm run dev
+
+React + Vite
+     │
+     ▼
+JSX
+     │
+     ▼
+Components
+     │
+     ▼
+Student Data (Array)
+     │
+     ▼
+.map() ──────────► Display Student Cards
+     │
+     ▼
+useState()
+     │
+     ├── students
+     ├── search
+     ├── name
+     └── major
+     │
+     ▼
+Events
+     │
+     ├── onChange
+     ├── onSubmit
+     └── onClick
+     │
+     ▼
+Array Methods
+     │
+     ├── map()
+     └── filter()
+     │
+     ▼
+Conditional Rendering
+     │
+     └── No students found
+
+
+| Code                      | Concept                            |
+| ------------------------- | ---------------------------------- |
+| `function App()`          | React component                    |
+| `function StudentCard()`  | Child component                    |
+| `{student.name}`          | JSX/data binding                   |
+| `useState()`              | State                              |
+| `onChange`                | Event handling                     |
+| `onSubmit`                | Form event                         |
+| `onClick`                 | Click event                        |
+| `.map()`                  | Render lists                       |
+| `key={student.id}`        | React list key                     |
+| `.filter()`               | Filter data                        |
+| `setStudents()`           | Update state                       |
+| `{condition ? ... : ...}` | Conditional rendering              |
+| `student` prop            | Parent → child communication       |
+| `onDelete` prop           | Child → parent event communication |
